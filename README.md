@@ -84,6 +84,7 @@ github.com/TravellerGSF/github.com/TravellerGSF/grpc_distr_calc/
 ├── go.sum - контрольные суммы зависимостей Go
 └── README.md - документация проекта
 
+
 ## Использование с помощью curl
 
 Регистрация пользователя:
