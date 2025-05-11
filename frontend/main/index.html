@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Калькулятор</h1>
+        <div id="userInfo">
+            <span id="userName"></span>
+            <button id="logoutButton">Выход</button>
+        </div>
+    </div>
+    <form id="expressionForm">
+        <input type="text" id="expressionInput" name="expression" placeholder="Введите выражение" required>
+        <button type="submit" id="submitButton">Отправить</button>
+    </form>
+    <div id="savedExpressions"></div>
+    <script src="script.js"></script>
+</body>
+</html>

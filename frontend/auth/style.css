@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.auth-container input {
+    background-color: white;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 280px;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.auth-container button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    margin-top: 3px;
+}
+
+.toggle-password {
+    position: relative;
+    right: 10px;
+    top: -30px;
+    cursor: pointer;
+}
