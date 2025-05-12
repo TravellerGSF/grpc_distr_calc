@@ -58,6 +58,7 @@ github.com/TravellerGSF/github.com/TravellerGSF/grpc_distr_calc/
 │   ├── grpc/ - gRPC сервисы
 │   ├── http/ - HTTP обработчики и middleware
 │   ├── storage/ - работа с базой данных
+│   ├── test/integration/ - интеграционный тест
 │   └── utils/ - вспомогательные утилиты
 ├── proto/ - протобуфер файлы для gRPC сервисов
 ├── .env - переменные окружения для конфигурации приложения
