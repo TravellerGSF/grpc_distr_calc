@@ -45,7 +45,7 @@ cd grpc_distr_calc
 
 ## Структура проекта
 ```
-github.com/TravellerGSF/github.com/TravellerGSF/grpc_distr_calc/
+grpc_distr_calc/
 ├── cmd/ - директория для запуска приложений
 │   ├── agent/ - запуск агента (вычислительного узла)
 │   └── orchestrator/ - запуск оркестратора (менеджера вычислений)
