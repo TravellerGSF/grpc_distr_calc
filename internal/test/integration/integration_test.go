@@ -57,10 +57,9 @@ func TestIntegrationWorkflow(t *testing.T) {
 		t.Fatalf("Failed to post expression: %v, status: %v", err, resp.Status)
 	}
 
-	// --- Периодически проверяем, пока статус не станет "done"
 	var result map[string]interface{}
 	var found bool
-	for i := 0; i < 10; i++ { // максимум 10 попыток (~20 секунд)
+	for i := 0; i < 10; i++ {
 		time.Sleep(2 * time.Second)
 
 		reqGet, _ := http.NewRequest("GET", baseURL+"/expression/", nil)
