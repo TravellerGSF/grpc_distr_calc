@@ -44,7 +44,7 @@ cd grpc_distr_calc
 4. Перейти на [localhost:8080](http://localhost:8080/) и начать проверять !
 
 ## Структура проекта
-
+```
 github.com/TravellerGSF/github.com/TravellerGSF/grpc_distr_calc/
 ├── cmd/ - директория для запуска приложений
 │   ├── agent/ - запуск агента (вычислительного узла)
@@ -68,7 +68,7 @@ github.com/TravellerGSF/github.com/TravellerGSF/grpc_distr_calc/
 ├── go.mod - файл зависимостей Go
 ├── go.sum - контрольные суммы зависимостей Go
 └── README.md - документация проекта
-
+```
 ## Использование с помощью curl
 
 Регистрация пользователя:
