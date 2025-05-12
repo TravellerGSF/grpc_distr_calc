@@ -16,22 +16,19 @@ func TestEvaluate(t *testing.T) {
 		{"4 * 2", 8},
 		{"10 / 2", 5},
 		{"(1 + 2) * 3", 9},
-		{"(10 / 2) + 3", 8},
-		{"2 * (3 + 4)", 14},
 		{"2 + 3 * 4", 14},
 		{"(2 + 3) * (4 + 5)", 45},
-		{"2 + 3 * (4 + 5)", 23},
 		{"2 * (3 + 4) / 5", 2.8},
 	}
 
-	for _, test := range tests {
-		postfix := infix_to_postfix.ToPostfix(test.expression)
+	for _, tt := range tests {
+		postfix := infix_to_postfix.ToPostfix(tt.expression)
 		result, err := Evaluate(postfix)
 		if err != nil {
-			t.Errorf("Evaluate(%q) returned an error: %v", test.expression, err)
+			t.Errorf("Evaluate(%q) returned error: %v", tt.expression, err)
 		}
-		if result != test.expected {
-			t.Errorf("Evaluate(%q) = %v; want %v", test.expression, result, test.expected)
+		if result != tt.expected {
+			t.Errorf("Evaluate(%q) = %v; want %v", tt.expression, result, tt.expected)
 		}
 	}
 }

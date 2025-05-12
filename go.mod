@@ -1,4 +1,4 @@
-module grpc_distr_calc
+module github.com/TravellerGSF/grpc_distr_calc
 
 go 1.23.0
 
